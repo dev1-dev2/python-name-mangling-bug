@@ -1,6 +1,6 @@
 # BUG IN PYTHON 3 NAME MANGLING MECHANISM
 
-Bug report.
+Bug report. https://github.com/python/cpython/issues/93787
 
 ## SUMMARY
 
