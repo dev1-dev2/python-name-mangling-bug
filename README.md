@@ -14,6 +14,17 @@ a class with a private field ( `class B(A)`).
 I used macOS Monterey, Version 12.4, Chip Apple M1, 8 GB of memory.
 Python 3.9.2rc1
 
+## ADDITIONALLY TESTED
+
+Additionally tested with GitHub Actions. 
+
+## AFFECTED VERSIONS
+
+python-version: `["3.5", "3.6", "3.7", "3.8", "3.9", "3.10", "3.11-dev"]`
+
+os: `[ubuntu-18.04, macOS-latest, windows-latest]`
+
+
 ## How to run tests
 
 You should have 2 tests with OK result.
