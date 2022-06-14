@@ -90,6 +90,10 @@ class B:
         a = self.a.__var  # AttributeError: 'A' object has no attribute '_B__var'
         return a
 
+    def test_2(self):
+        a = self.a._A__var  # return 2
+        return a
+
 
 class C(A):
 
