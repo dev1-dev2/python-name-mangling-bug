@@ -4,6 +4,8 @@ Bug report. https://github.com/python/cpython/issues/93787
 
 ## SUMMARY
 
+Impossible to get an attribute value by its mangled name with described conditions.
+
 An incorrect message is generated when a protected instance field is accessed from an instance of another class.
 It does not matter whether the object was created inside the object as a local variable of the method (`a = A(),
 unittest`), assigned to an instance field (`self.a = A()`), or the object from which the method is called inherited
@@ -71,6 +73,9 @@ class TestMangledNamesUsage(unittest.TestCase):
         self.assertTrue("'A' object has no attribute '_TestMangledNamesUsage__var'" in str(context.exception),
                         msg="Wrong message.")
 ```
+##NOTE:
+While using Unittest mangled name will be `_TestMangledNamesUsage__var`.
+It is impossible to get a value by this name. That's why it is a bug.
 
 ### Without unittest
 
